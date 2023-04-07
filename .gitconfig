@@ -1,0 +1,21 @@
+[pull]
+    ff = only
+[init]
+    defaultBranch = main
+[user]
+    name = Yue Gao
+    email = 11145354+Lodour@users.noreply.github.com
+    signingkey = 4E3C74EED7323DF2
+[commit]
+    gpgsign = true
+[core]
+    editor = nvim
+    excludesfile = ~/.config/git/ignore
+[icdiff]
+    options = --highlight
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+
