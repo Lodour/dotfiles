@@ -1,0 +1,8 @@
+alias gpa="gcam update && gp"
+alias mykinit="/usr/bin/kinit -t ~/.ssh/gy.key -l 30d gy@CS.WISC.EDU"
+alias typora="open -a typora"
+
+function clean_music () {
+    cd ~/Music/Music/Media.localized/Music
+    python -c "import os; [os.system(f'rm -rf \"{f}\"') for f in os.listdir() if f.startswith('\ufeff')]"
+}
