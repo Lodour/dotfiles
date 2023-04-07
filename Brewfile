@@ -4,12 +4,12 @@ tap "homebrew/core"
 tap "lencx/chatgpt", "https://github.com/lencx/ChatGPT.git"
 # Automatically restart SSH sessions and tunnels
 brew "autossh"
-# Interactive Commitizen CLI that generate standardized commit messages
-brew "czg", link: false
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# Distributed revision control system
-brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
 # AVH edition of git-flow
@@ -20,14 +20,26 @@ brew "git-lfs"
 brew "gnupg"
 # Fast, simple & powerful blog framework
 brew "hexo"
+# Improved colored diff
+brew "icdiff"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Mac App Store command-line interface
+brew "mas"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Platform built on V8 to build network applications
+brew "node"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Monitor data's progress through a pipe
 brew "pv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
 # Code-search similar to ack
@@ -38,18 +50,30 @@ brew "tldr"
 brew "tmux"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+# Internet file retriever
+brew "wget"
 # Yet Another Dotfiles Manager
 brew "yadm"
+# Tool for managing your YubiKey configuration
+brew "ykman"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-# UNIX shell (command interpreter)
-brew "zsh"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Transfer files from and to an Android smartphone
+cask "android-file-transfer"
 # Allows connection to a computer remotely
 cask "anydesk"
+# Web debugging Proxy application
+cask "charles"
 # Desktop wrapper for OpenAI ChatGPT
 cask "chatgpt"
+# Automated testing of webapps for Google Chrome
+cask "chromedriver"
+# Tool to remove unnecessary files and folders from disk
+cask "cleanmymac"
+# API documentation browser and code snippet manager
+cask "dash"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
@@ -66,14 +90,24 @@ cask "mactex-no-gui"
 cask "mathpix-snipping-tool"
 # Research management tool
 cask "mendeley"
+# Office suite
+cask "microsoft-office"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Minimal installer for conda
 cask "miniconda"
+# Minimal installer for conda specific to conda-forge
+cask "miniforge"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Scheduling application focusing on organization
 cask "omnifocus"
+# Visual communication software
+cask "omnigraffle"
+# Pap.er, 4K 5K HD Wallpaper Application
+cask "paper"
 # IDE for professional Python development
 cask "pycharm"
 # Team communication and collaboration software
@@ -86,5 +120,16 @@ cask "texifier"
 cask "visual-studio-code"
 # Free messaging and calling application
 cask "wechat"
+# Network protocol analyzer
+cask "wireshark"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "Brother iPrint&Scan", id: 1193539993
+mas "Disk Speed Test", id: 425264550
+mas "MindNode", id: 1289197285
+mas "QuickFox", id: 1514073011
+mas "Toggl Track", id: 1291898086
+mas "Vision", id: 1572457968
+mas "Xcode", id: 497799835
