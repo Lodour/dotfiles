@@ -1,0 +1,28 @@
+#!/bin/zsh
+
+# Install Rosetta
+if [ $(uname -p) == "arm" ]
+then
+    echo "Installing Rosetta..."
+    softwareupdate --install-rosetta --agree-to-license
+fi
+
+# Install CLI Tools
+if ! xcode-select -p >/dev/null
+then
+    echo "Installing CLI tools..."
+    xcode-select --install
+fi
+
+# Install Homebrew
+if ! type brew >/dev/null
+then
+    echo "Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
+
+if [ -f "$HOME/.Brewfile" ]; then
+    echo "Installing Homebrew bundle..."
+    brew bundle --verbose --file=.Brewfile
+fi
+
