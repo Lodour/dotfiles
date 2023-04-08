@@ -1,1 +1,2 @@
 .config/zsh/aliases.private* filter=git-crypt diff=git-crypt
+.config/.czrc filter=git-crypt diff=git-crypt
