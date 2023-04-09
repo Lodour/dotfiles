@@ -56,24 +56,18 @@ brew "wget"
 brew "yadm"
 # Tool for managing your YubiKey configuration
 brew "ykman"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
 # Allows connection to a computer remotely
 cask "anydesk"
-# Web debugging Proxy application
-cask "charles"
 # Desktop wrapper for OpenAI ChatGPT
 cask "chatgpt"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
-# API documentation browser and code snippet manager
-cask "dash"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
@@ -104,8 +98,6 @@ cask "notion"
 cask "obsidian"
 # Scheduling application focusing on organization
 cask "omnifocus"
-# Visual communication software
-cask "omnigraffle"
 # Pap.er, 4K 5K HD Wallpaper Application
 cask "paper"
 # IDE for professional Python development
