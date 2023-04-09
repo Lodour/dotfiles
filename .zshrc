@@ -107,6 +107,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias yy="yadm enter zsh"
 
 function gg1 () {
     ssh -tt -q $1 "~/bin/gpustat --gpuname-width 26 ${@:2}"
