@@ -97,7 +97,6 @@ export LC_ALL=en_US.UTF-8
 # export ARCHFLAGS="-arch x86_64"
 export TERM=xterm-256color
 export GPG_TTY=$TTY
-export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
