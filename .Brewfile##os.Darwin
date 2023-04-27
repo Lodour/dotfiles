@@ -4,6 +4,8 @@ tap "homebrew/core"
 tap "lencx/chatgpt", "https://github.com/lencx/ChatGPT.git"
 # Automatically restart SSH sessions and tunnels
 brew "autossh"
+# Defines a standard way of committing rules and communicating it
+brew "commitizen"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -122,6 +124,5 @@ mas "Brother iPrint&Scan", id: 1193539993
 mas "Disk Speed Test", id: 425264550
 mas "MindNode", id: 1289197285
 mas "QuickFox", id: 1514073011
-mas "Toggl Track", id: 1291898086
 mas "Vision", id: 1572457968
 mas "Xcode", id: 497799835
