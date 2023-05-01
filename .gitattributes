@@ -1,4 +1,4 @@
 .config/zsh/aliases.private* filter=git-crypt diff=git-crypt
 .config/.czrc filter=git-crypt diff=git-crypt
 .ssh/** filter=git-crypt diff=git-crypt
-*.dash-license filter=git-crypt diff=git-crypt
+*.private* filter=git-crypt diff=git-crypt
