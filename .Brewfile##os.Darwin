@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "lencx/chatgpt", "https://github.com/lencx/ChatGPT.git"
 # Automatically restart SSH sessions and tunnels
@@ -70,6 +71,8 @@ cask "chatgpt"
 cask "chromedriver"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
+# API documentation browser and code snippet manager
+cask "dash4"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
