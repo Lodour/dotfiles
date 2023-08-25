@@ -1,10 +1,13 @@
 #!/bin/zsh
 
-# Install Rosetta
+# Install Rosetta & Touch ID Sudo
 if [ $(uname -p) == "arm" ]
 then
     echo "Installing Rosetta..."
     softwareupdate --install-rosetta --agree-to-license
+
+    filename=/private/etc/pam.d/sudo
+    awk 'NR==2{print "auth       sufficient     pam_tid.so"}1' "$filename" | sudo tee "$filename"
 fi
 
 # Install CLI Tools
