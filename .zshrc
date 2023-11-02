@@ -130,3 +130,20 @@ FILES=(
 for f in $FILES; do
     test -r $f && source $f
 done
+
+# Shell-GPT integration ZSH v0.1
+_sgpt_zsh() {
+if [[ -n "$BUFFER" ]]; then
+    _sgpt_prev_cmd=$BUFFER
+    BUFFER+="⌛"
+    zle -I && zle redisplay
+    BUFFER=$(sgpt --shell <<< "$_sgpt_prev_cmd")
+    zle end-of-line
+fi
+}
+zle -N _sgpt_zsh
+bindkey ^l _sgpt_zsh
+# Shell-GPT integration ZSH v0.1
+
+alias gpt3="sgpt --model gpt-3.5-turbo"
+alias gpt4="sgpt --model gpt-4"
