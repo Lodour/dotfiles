@@ -46,7 +46,7 @@ let NERDTreeQuitOnOpen=1                                        " 打开一个�
 "autocmd VimEnter * NERDTree
 
 " semshi
-let g:python3_host_prog='/usr/bin/python3'
+let g:python3_host_prog='/opt/homebrew/bin/python3'
 
 " -------------------
 "  Shortcuts
