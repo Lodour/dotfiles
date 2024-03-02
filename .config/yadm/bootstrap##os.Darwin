@@ -29,6 +29,21 @@ if [ -f "$HOME/.Brewfile" ]; then
     brew bundle --verbose --file=.Brewfile
 fi
 
+# Add GPG key if not
+KEYID="5972E87FC93CA816"
+if ! gpg -k $KEYID >/dev/null
+then
+    echo "Importing GPG public key $KEYID ..."
+    gpg --card-edit --command-fd 0 <<< fetch
+fi
+
+# Set GPG key to ultimate trust
+if ! gpg -k $KEYID | grep "ultimate" >/dev/null
+then
+    echo "Setting $KEYID trust to ultimate..."
+    echo "5\ny\n" | gpg --command-fd 0 --edit-key $KEYID trust
+fi
+
 # Run private scripts
 if [ -f "$HOME/.config/yadm/bootstrap.private" ]; then
     echo "Running private scripts..."
