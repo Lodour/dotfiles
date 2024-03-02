@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# Install Rosetta & Touch ID Sudo
+# Install Rosetta & Touch ID sudo
 if [ $(uname -p) == "arm" ]
 then
     echo "Installing Rosetta..."
@@ -10,14 +10,14 @@ then
     awk 'NR==2{print "auth       sufficient     pam_tid.so"}1' "$filename" | sudo tee "$filename"
 fi
 
-# Install CLI Tools
+# Install CLI Tools if not
 if ! xcode-select -p >/dev/null
 then
     echo "Installing CLI tools..."
     xcode-select --install
 fi
 
-# Install Homebrew
+# Install Homebrew if not
 if ! type brew >/dev/null
 then
     echo "Installing Homebrew..."
@@ -34,4 +34,3 @@ if [ -f "$HOME/.config/yadm/bootstrap.private" ]; then
     echo "Running private scripts..."
     /bin/zsh "$HOME/.config/yadm/bootstrip.private"
 fi
-
