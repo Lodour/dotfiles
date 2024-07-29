@@ -5,3 +5,28 @@ function clean_music () {
     cd ~/Music/Music/Media.localized/Music
     python -c "import os; [os.system(f'rm -rf \"{f}\"') for f in os.listdir() if f.startswith('\ufeff')]"
 }
+
+# Function to find files matching a pattern in a specified directory and perform text replacement.
+# Arguments:
+# 1: Old text to replace
+# 2: New text to use as replacement
+# 3: Filename pattern (default: '*.tex')
+# 4: Search directory (default: current directory)
+function replace {
+  local old_text="${1}"
+  local new_text="${2}"
+  local pattern="${3:-*.tex}"
+  local directory="${4:-.}"
+
+  # Verify that the old and new texts are provided
+  if [[ -z "$old_text" || -z "$new_text" ]]; then
+    echo "Please provide both old text and new text for replacement."
+    return 1
+  fi
+
+  # Form the sed replacement pattern
+  local replacement="s/${old_text}/${new_text}/g"
+
+  # Execute the find command with sed for in-place editing
+  find "$directory" -type f -name "$pattern" -exec sed -i '' "${replacement}" {} +
+}
