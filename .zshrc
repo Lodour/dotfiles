@@ -147,3 +147,4 @@ bindkey ^l _sgpt_zsh
 
 alias gpt3="sgpt --model gpt-3.5-turbo"
 alias gpt4="sgpt --model gpt-4"
+export EDITOR=nvim
