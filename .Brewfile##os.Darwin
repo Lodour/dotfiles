@@ -1,13 +1,11 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
 # Automatically restart SSH sessions and tunnels
 brew "autossh"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Enable transparent encryption/decryption of files in a git repo
@@ -42,8 +40,8 @@ brew "pv"
 brew "python@3.12"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# Code-search similar to ack
-brew "the_silver_searcher"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -84,8 +82,6 @@ cask "mathpix-snipping-tool"
 cask "microsoft-office"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-# Minimal installer for conda
-cask "miniconda"
 # Minimal installer for conda specific to conda-forge
 cask "miniforge"
 # App to write, plan, collaborate, and get organized

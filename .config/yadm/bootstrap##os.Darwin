@@ -20,7 +20,7 @@ fi
 if ! type brew >/dev/null
 then
     echo "Installing Homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
@@ -47,5 +47,5 @@ fi
 # Run private scripts
 if [[ -f "$HOME/.config/yadm/bootstrap.private" ]]; then
     echo "Running private scripts..."
-    /bin/zsh "$HOME/.config/yadm/bootstrip.private"
+    /bin/zsh "$HOME/.config/yadm/bootstrap.private"
 fi

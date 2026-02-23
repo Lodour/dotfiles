@@ -70,8 +70,13 @@ export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-HIST_STAMPS="%Y-%m-%d %H:%m:%S"
+HIST_STAMPS="%Y-%m-%d %H:%M:%S"
+HISTSIZE=2147483647
 SAVEHIST=2147483647
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder

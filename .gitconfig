@@ -20,4 +20,4 @@
     process = git-lfs filter-process
 
 [credential]
-	helper = store
+	helper = osxkeychain
