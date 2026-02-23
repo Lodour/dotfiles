@@ -1,0 +1,11 @@
+-- LazyVim already provides all previously custom keymaps:
+--
+--   <C-h/j/k/l>  window navigation
+--   <S-h>/<S-l>  buffer prev / next
+--   <leader>e    neo-tree file explorer
+--   <leader>ff   telescope: find files
+--   <leader>fg   telescope: live grep
+--   <leader>cr   LSP rename
+--   <leader>ca   LSP code action
+--
+-- Add custom keymaps below as needed.
